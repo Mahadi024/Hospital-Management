@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="model.Doctor" table="DOCTOR">
+      <id name="doctorId" type="int" column="doctorId">
+         <generator class="identity"/>
+      </id>  
+      <property name="doctorName" column="doctorName" type="string"/>
+      <property name="doctorSpeciality" column="doctorSpeciality" type="string"/>
+      <property name="doctorCharge" column="doctorCharge" type="int" />
+      <property name="doctorVisitingDay" column="doctorVisitingDay" type="string" />
+      <property name="doctorContact" column="doctorContact" type="string"/>
+   </class>
+</hibernate-mapping>
